@@ -5,9 +5,7 @@ import DetailBook from "@/components/detail-book";
 
 const URL = "https://books-api.nomadcoders.workers.dev/list";
 
-export async function getCategoryBookList(
-  id: string
-): Promise<ICategoryBookList> {
+async function getCategoryBookList(id: string): Promise<ICategoryBookList> {
   const response = await fetch(`${URL}?name=${id}`);
   const json = await response.json();
   return json.results;
