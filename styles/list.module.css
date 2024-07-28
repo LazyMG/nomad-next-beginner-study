@@ -1,0 +1,17 @@
+.main {
+  width: 60%;
+  max-width: 60%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px;
+}
